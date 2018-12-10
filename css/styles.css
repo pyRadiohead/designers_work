@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,700');
+
+:root {
+    --main-bg: #C4C4C4;
+    --black: #0E0A18;
+    --grey: #E8DFE0;
+    --purple: #4717F6;
+    --violet: #A33ACB;
+    --darkgrey: #D1C7C8;
+    --main-font: 'Roboto Mono', monospace;
+
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--black);
+    margin: 0;
+}
+
+input[type="email"] {
+    height: 45px;
+    width: 80%;
+}
+
+html {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body,
+html {
+    min-height: 100%;
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--grey);
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--grey);
+    font-family: var(--main-font);
+
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple);
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+a:hover {
+    color: var(--violet);
+}
+
+.ba-container {
+    margin: 0 auto;
+    padding-left: 98px;
+    padding-right: 98px;
+
+}
+
+.ba-timetable-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.ba-col-6 {
+    width: 50%;
+}
+
+.ba-header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--main-bg);
+    margin: 0 auto;
+    height: 80px;
+}
+
+.ba-nav-menu {
+    align-self: center;
+}
+
+.ba-menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 85px;
+
+}
+
+.ba-menu li a {
+    color: var(--black);
+
+}
+
+.ba-menu li+li {
+    margin-left: 30px;
+}
+
+.ba-menu li:hover a {
+    color: var(--violet);
+}
+
+.ba-intro-section {
+    height: calc(100vh - 80px);
+    background: url("../img/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-heading {
+    max-width: 400px;
+    padding-top: 140px;
+}
+
+.intro-sub-heading {
+    margin-top: 25px;
+}
+
+.ba-button {
+    display: inline-block;
+    margin-top: 84px;
+    text-transform: uppercase;
+    background: var(--purple);
+    font-size: 18px;
+    color: var(--grey);
+    width: 270px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+}
+
+.ba-button:hover {
+    background: var(--violet);
+}
+
+/*END of INTRO SECTION*/
+
+/**START OF SECTION ABOUT/*/
+
+.ba-section-about {
+    margin-top: 174px;
+}
+
+.ba-section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.ba-section-title {
+    text-transform: uppercase;
+}
+
+.ba-section-title:before {
+    display: inline-block;
+    content: '';
+    height: 6px;
+    width: 170px;
+    background: var(--purple);
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.ba-section-text {
+    max-width: 670px;
+    margin-top: 84px;
+    align-self: center;
+
+}
+
+
+/**END OF SECTION ABOUT/*/
+.ba-section-agenda {
+    margin-top: 219px;
+
+}
+
+.ba-timetable-row {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 87px;
+
+}
+
+.ba-timetable__time {
+    display: flex;
+    justify-content: flex-end;
+    border-right: 6px solid var(--grey);
+    padding-right: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+.ba-timetable__event {
+    padding-left: 65px;
+    line-height: 1;
+}
+
+.ba-timetable__event h3 {
+    color: var(--purple);
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 9px;
+}
+
+
+.ba-btn-switcher {
+    background: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: var(--grey);
+    cursor: pointer;
+
+}
+
+.ba-date-switchers {
+    text-align: center;
+    margin-bottom: 122px;
+
+}
+
+.switch-element {
+    color: var(--purple);
+}
+
+.ba-section-speakers {
+    margin-top: 193px;
+    background: var(--grey);
+}
+
+/*END*/
+
+.ba-hide {
+    display: none;
+}
+
+.ba-speakers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ba-speaker-info {
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.ba-speaker__photo {
+    margin-right: 30px;
+}
+
+.ba-speakers {
+    margin-top: 152px;
+}
+
+.ba-speaker__social-media {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ba-speaker__social-media li+li {
+    margin-left: 32px;
+}
+
+.ba-speaker__contacts {
+    position: relative;
+}
+
+
+/*subscribe section*/
+
+
+.ba-subscribe-section {
+    background: var(--black);
+
+}
+
+.ba-subscribe {
+    height: 196px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ba-subscribe__text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: var(--grey);
+
+}
+
+.ba-subscribe__text p {
+    max-width: 300px;
+}
+
+.colored-text {
+    color: var(--violet);
+}
