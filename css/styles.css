@@ -385,6 +385,7 @@ input[type="email"] {
     border: none;
     color: #fff;
     cursor: pointer;
+    font-family:var(--main-font);
 }
 
 .ba-btn:hover {
